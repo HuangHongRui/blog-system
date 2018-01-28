@@ -16,6 +16,8 @@ blog-system
 
 - 规范文档： [Code_Guide](https://github.com/SpontaLeo/Code-Guide)
 
+- 流程图：
+![流程图](http://otdmajhxs.bkt.clouddn.com/Blog_System.png)
 
 # 技术栈:
 - React
