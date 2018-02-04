@@ -4,6 +4,7 @@ import * as React from 'react';
 import { inject, observer } from 'mobx-react';
 import { AppStore } from '../../../store';
 import { Tab } from '../../../store/AppStore';
+import { Link } from 'react-router-dom';
 import * as classnames from 'classnames';
 
 interface Props {
@@ -14,7 +15,7 @@ export const MENUITEMS: RouterItem[] = [
   {
     key: 'home',
     title: 'Home',
-    linkTo: '/home'
+    linkTo: '/'
   },
   {
     key: 'timeline',
@@ -44,11 +45,8 @@ export default class Header extends React.Component<Props, {}> {
                 menu_item: true,
                 active: appStore.currentTab === item.key
               })}
-              onClick={() => {
-                appStore.currentTab = item.key;
-              }}
             >
-              {item.title}
+              <Link to={item.linkTo}>{item.title}</Link>
             </div>
           );
         })}

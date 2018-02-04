@@ -1,0 +1,4 @@
+.menu > .menu_item {
+  cursor: pointer; }
+  .menu > .menu_item.active {
+    color: red; }

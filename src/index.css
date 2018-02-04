@@ -1,0 +1,9 @@
+body {
+  height: 100%; }
+  body #root {
+    height: 100%; }
+  body .id {
+    width: 20px;
+    padding: 0 2px; }
+    body .id:hover {
+      cursor: pointer; }
