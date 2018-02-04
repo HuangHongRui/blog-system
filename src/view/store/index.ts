@@ -1,5 +1,13 @@
-const stores = {};
+import AppStore from './AppStore';
 
-export {};
+const appStore = new AppStore();
+
+const stores = {
+  appStore
+};
+
+export {
+  AppStore
+};
 
 export default stores;
