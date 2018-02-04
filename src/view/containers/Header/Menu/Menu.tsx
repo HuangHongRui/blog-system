@@ -45,6 +45,7 @@ export default class Header extends React.Component<Props, {}> {
                 menu_item: true,
                 active: appStore.currentTab === item.key
               })}
+              onClick={() => (appStore.currentTab = item.key)}
             >
               <Link to={item.linkTo}>{item.title}</Link>
             </div>

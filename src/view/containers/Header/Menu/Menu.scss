@@ -1,8 +1,18 @@
 .menu {
-  >.menu_item {
+  > .menu_item {
     cursor: pointer;
+    > a {
+      text-decoration-line: none;
+      color: #c8c8c8;
+      &:hover {
+        text-decoration-line: underline;
+      }
+    }
     &.active {
-      color: red;
+      transition: all .3s;
+      > a {
+        color: #606060;
+      }
     }
   }
 }
