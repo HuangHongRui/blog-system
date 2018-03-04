@@ -1,15 +1,22 @@
+import React from 'react';
+import styled from 'styled-components';
 import './Home.css';
+import CategoryMenu from './CategoryMenu/CategoryMenu';
+import Article from './ArticleItem/Article';
 
-import * as React from 'react';
-import CategoryMenu from './CategoryMenu';
+const HomeView = styled.div`
 
+`;
 export default class Home extends React.Component<{}, {}> {
   render() {
     return (
-      <div className="home">
-        <CategoryMenu />
-        <div className="articles">对应的文章</div>
-      </div>
+      <HomeView className="home">
+        <div className="articles">
+          <CategoryMenu />
+          <Article />
+          <div className="component"/>
+        </div>
+      </HomeView>
     );
   }
 }

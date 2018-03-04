@@ -1,0 +1,29 @@
+.articleItem {
+  padding: 5rem;
+  justify-content: space-around;
+  align-items: start;
+  h2, p{
+    text-align: left;
+  }
+  h2::after {
+    content: '';
+    width: 25%;
+    display: block;
+    border-bottom: solid .15rem #ddd;
+    margin: 2vh 0;
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+    .like {
+      &:hover{
+        cursor: pointer;
+        color: red;
+      }
+    }
+  }
+  &:hover {
+    background: #eee;
+  }
+}

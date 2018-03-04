@@ -1,0 +1,4 @@
+.category {
+  display: grid;
+  justify-content: start;
+  margin: 4vh 5rem; }

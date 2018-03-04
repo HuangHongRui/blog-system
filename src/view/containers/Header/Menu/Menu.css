@@ -1,11 +1,16 @@
-.menu > .menu_item {
-  cursor: pointer; }
-  .menu > .menu_item > a {
-    text-decoration-line: none;
-    color: #c8c8c8; }
-    .menu > .menu_item > a:hover {
-      text-decoration-line: underline; }
-  .menu > .menu_item.active {
-    transition: all .3s; }
-    .menu > .menu_item.active > a {
-      color: #606060; }
+.menu {
+  display: inline-grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: repeat(4, 10vw); }
+  .menu > .menu_item {
+    cursor: pointer; }
+    .menu > .menu_item > a {
+      text-decoration-line: none;
+      color: #c8c8c8; }
+      .menu > .menu_item > a:hover {
+        text-decoration-line: underline; }
+    .menu > .menu_item.active {
+      transition: all 1s; }
+      .menu > .menu_item.active > a {
+        color: #606060; }

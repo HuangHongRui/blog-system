@@ -1,0 +1,16 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-column-gap: 5vw;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+  background: #eee;
+  margin: -5vw;
+  margin-top: 0;
+  .designer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2vw;
+  }
+}

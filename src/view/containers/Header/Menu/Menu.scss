@@ -1,4 +1,9 @@
 .menu {
+  display: inline-grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: repeat(4, 10vw);
+
   > .menu_item {
     cursor: pointer;
     > a {
@@ -9,7 +14,7 @@
       }
     }
     &.active {
-      transition: all .3s;
+      transition: all 1s;
       > a {
         color: #606060;
       }
